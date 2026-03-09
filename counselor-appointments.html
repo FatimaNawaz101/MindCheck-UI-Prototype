@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindCheck - Manage Appointments</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav>
+    <a href="counselor-dashboard.html" class="logo">MindCheck</a>
+    <ul>
+        <li><a href="counselor-dashboard.html">Dashboard</a></li>
+        <li><a href="counselor-appointments.html">Appointments</a></li>
+        <li><a href="counselor-resources.html">Resources</a></li>
+    </ul>
+    <span class="user">Dr. Sheldon Gonsalves</span>
+</nav>
+
+<div class="container">
+
+    <h1>Manage Appointments</h1>
+    <p class="subtitle">Review and respond to student counseling requests</p>
+
+    <hr class="divider">
+
+    <h2 style="margin-bottom: 15px;">Pending Requests</h2>
+
+    <div class="card">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+            <div>
+                <p><strong>Fatima N.</strong></p>
+                <p class="text-muted" style="margin-top: 5px;">Friday, March 14, 2026 — 10:30 AM</p>
+            </div>
+            <span class="badge badge-yellow">Pending</span>
+        </div>
+        <p class="text-muted" style="margin-top: 10px;">Concern: General wellness check-in.</p>
+
+        <label for="r1-date" style="margin-top: 15px;">Reschedule Date</label>
+        <input type="date" id="r1-date">
+
+        <label for="r1-time">Reschedule Time</label>
+        <select id="r1-time">
+            <option>9:00 AM</option>
+            <option>10:00 AM</option>
+            <option>11:00 AM</option>
+            <option>1:00 PM</option>
+            <option>2:00 PM</option>
+            <option>3:00 PM</option>
+        </select>
+
+        <div style="display: flex; gap: 10px; margin-top: 15px;">
+            <button class="btn btn-green" style="flex: 1;" onclick="alert('Appointment approved. Student notified.')">Approve</button>
+            <button class="btn btn-gray" style="flex: 1;" onclick="alert('Reschedule proposal sent to student.')">Propose Reschedule</button>
+            <button class="btn btn-gray" style="flex: 1;" onclick="alert('Appointment declined. Student notified.')">Decline</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+            <div>
+                <p><strong>Marcus T.</strong></p>
+                <p class="text-muted" style="margin-top: 5px;">Monday, March 16, 2026 — 1:00 PM</p>
+            </div>
+            <span class="badge badge-yellow">Pending</span>
+        </div>
+        <p class="text-muted" style="margin-top: 10px;">Concern: Trouble sleeping and feeling anxious.</p>
+
+        <label for="r2-date" style="margin-top: 15px;">Reschedule Date</label>
+        <input type="date" id="r2-date">
+
+        <label for="r2-time">Reschedule Time</label>
+        <select id="r2-time">
+            <option>9:00 AM</option>
+            <option>10:00 AM</option>
+            <option>11:00 AM</option>
+            <option>1:00 PM</option>
+            <option>2:00 PM</option>
+            <option>3:00 PM</option>
+        </select>
+
+        <div style="display: flex; gap: 10px; margin-top: 15px;">
+            <button class="btn btn-green" style="flex: 1;" onclick="alert('Appointment approved. Student notified.')">Approve</button>
+            <button class="btn btn-gray" style="flex: 1;" onclick="alert('Reschedule proposal sent to student.')">Propose Reschedule</button>
+            <button class="btn btn-gray" style="flex: 1;" onclick="alert('Appointment declined. Student notified.')">Decline</button>
+        </div>
+    </div>
+
+    <hr class="divider">
+
+    <h2 style="margin-bottom: 15px;">Confirmed Appointments</h2>
+
+    <div class="card">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+            <div>
+                <p><strong>Fatima N. — Session #3</strong></p>
+                <p class="text-muted" style="margin-top: 5px;">Monday, March 11, 2026 — 2:00 PM</p>
+            </div>
+            <span class="badge badge-green">Confirmed</span>
+        </div>
+        <p class="text-muted" style="margin-top: 10px;">Concern: Feeling overwhelmed with coursework.</p>
+    </div>
+
+    <div class="card">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+            <div>
+                <p><strong>Priya S. — Session #1</strong></p>
+                <p class="text-muted" style="margin-top: 5px;">Wednesday, March 18, 2026 — 3:00 PM</p>
+            </div>
+            <span class="badge badge-green">Confirmed</span>
+        </div>
+        <p class="text-muted" style="margin-top: 10px;">Concern: Academic stress.</p>
+    </div>
+
+    <a href="counselor-dashboard.html" class="btn btn-gray" style="margin-top: 10px;">Back to Dashboard</a>
+
+</div>
+
+</body>
+</html>
