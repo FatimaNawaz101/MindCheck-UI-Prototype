@@ -18,7 +18,7 @@
     <a href="index.html" class="logo">MindCheck</a>
 
     <ul>
-        <!-- admin page for wellness coordinator -->
+        <!-- user dashboard page -->
         <li><a href="index.html">user dashboard</a></li>
 
         <!-- existing pages from the prototype -->
@@ -29,6 +29,55 @@
     <!-- placeholder user for the demo -->
     <span class="user">Hello, Wellness Coordinator</span>
 </nav>
+<div class="container">
+
+<!-- Page header / intro section -->
+<!-- just gives context about what this dashboard is for -->
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+        <div>
+            <h1>Campus Wellness Overview</h1>
+            <p class="subtitle">Monitor wellness trends and generate campus reports.</p>
+        </div>
+
+        <!-- quick shortcut to report generation -->
+        <a href="#report-section" class="btn btn-green">Generate Report</a>
+    </div>
+
+<!-- STAT SUMMARY SECTION -->
+<!-- quick numbers the coordinator would want to see right away -->
+    <div class="two-col">
+
+        <div class="stat-box">
+            <div class="label">Average Campus Mood</div>
+            <div class="number">6.4</div>
+            <div class="note">Based on this week's check-ins</div>
+        </div>
+
+        <div class="stat-box">
+            <div class="label">Active Students</div>
+            <div class="number">132</div>
+            <div class="note">Logged at least one mood entry this week</div>
+        </div>
+
+    </div>
+
+    <!-- more usage related stats -->
+    <div class="two-col">
+
+        <div class="stat-box">
+            <div class="label">Mood Entries</div>
+            <div class="number">320</div>
+            <div class="note">Total submissions this week</div>
+        </div>
+
+        <div class="stat-box">
+            <div class="label">Counseling Requests</div>
+            <div class="number">18</div>
+            <div class="note">Appointment requests this week</div>
+        </div>
+
+    </div>
+
 </body>
 
 </html>
