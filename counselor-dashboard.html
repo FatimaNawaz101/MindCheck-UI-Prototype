@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindCheck - Counselor Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav>
+    <a href="counselor-dashboard.html" class="logo">MindCheck</a>
+    <ul>
+        <li><a href="counselor-dashboard.html">Dashboard</a></li>
+        <li><a href="counselor-appointments.html">Appointments</a></li>
+        <li><a href="counselor-resources.html">Resources</a></li>
+    </ul>
+    <span class="user">Dr. Sheldon Gonsalves</span>
+</nav>
+
+<div class="container">
+
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+        <div>
+            <h1>Counselor Dashboard</h1>
+            <p class="subtitle">Campus wellness overview — Week of March 9, 2026</p>
+        </div>
+        <a href="counselor-appointments.html" class="btn btn-green">Manage Appointments</a>
+    </div>
+
+    <div class="two-col">
+        <div class="stat-box">
+            <div class="label">Campus Avg Mood</div>
+            <div class="number">6.1</div>
+            <div class="note">↓ 0.4 from last week</div>
+        </div>
+        <div class="stat-box">
+            <div class="label">Pending Requests</div>
+            <div class="number">7</div>
+            <div class="note">Appointments to review</div>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2 style="margin-bottom: 15px;">Campus Mood This Week</h2>
+        <table>
+            <tr><th>Day</th><th>Avg Mood</th><th>Visual</th></tr>
+            <tr><td>Monday</td><td>6.5</td><td><div style="width:65%;height:12px;background:#2d6a4f;border-radius:4px;"></div></td></tr>
+            <tr><td>Tuesday</td><td>6.8</td><td><div style="width:68%;height:12px;background:#2d6a4f;border-radius:4px;"></div></td></tr>
+            <tr><td>Wednesday</td><td>5.9</td><td><div style="width:59%;height:12px;background:#e8a020;border-radius:4px;"></div></td></tr>
+            <tr><td>Thursday</td><td>5.4</td><td><div style="width:54%;height:12px;background:#e8a020;border-radius:4px;"></div></td></tr>
+            <tr><td>Friday</td><td>6.1</td><td><div style="width:61%;height:12px;background:#2d6a4f;border-radius:4px;"></div></td></tr>
+        </table>
+        <div class="alert alert-yellow" style="margin-top: 15px;">
+            Mid-week dip detected — possible exam or deadline stress pattern.
+        </div>
+    </div>
+
+    <h2 style="margin-bottom: 15px;">At-Risk Students</h2>
+    <div class="alert alert-blue">
+        Students with a mood of 3 or below for 3+ consecutive days. Identities are anonymized.
+    </div>
+
+    <div class="card">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+            <div>
+                <p><strong>Student #1042</strong></p>
+                <p class="text-muted" style="margin-top: 5px;">Avg mood: 2.8 — 4 consecutive low days</p>
+            </div>
+            <span class="badge badge-red">High Risk</span>
+        </div>
+    </div>
+
+    <div class="card">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+            <div>
+                <p><strong>Student #1087</strong></p>
+                <p class="text-muted" style="margin-top: 5px;">Avg mood: 3.1 — 3 consecutive low days</p>
+            </div>
+            <span class="badge badge-red">High Risk</span>
+        </div>
+    </div>
+
+    <div class="card">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+            <div>
+                <p><strong>Student #1156</strong></p>
+                <p class="text-muted" style="margin-top: 5px;">Avg mood: 3.0 — 3 consecutive low days</p>
+            </div>
+            <span class="badge badge-red">High Risk</span>
+        </div>
+    </div>
+
+    <hr class="divider">
+
+    <h2 style="margin-bottom: 15px;">Today's Appointments</h2>
+
+    <div class="card">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+            <div>
+                <p><strong>Fatima N. — Session #3</strong></p>
+                <p class="text-muted" style="margin-top: 5px;">2:00 PM</p>
+            </div>
+            <span class="badge badge-green">Confirmed</span>
+        </div>
+        <p class="text-muted" style="margin-top: 10px;">Concern: Feeling overwhelmed with coursework.</p>
+    </div>
+
+    <div class="card">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+            <div>
+                <p><strong>Marcus T. — Initial Consultation</strong></p>
+                <p class="text-muted" style="margin-top: 5px;">3:30 PM</p>
+            </div>
+            <span class="badge badge-green">Confirmed</span>
+        </div>
+        <p class="text-muted" style="margin-top: 10px;">Concern: General anxiety and sleep issues.</p>
+    </div>
+
+    <div style="display: flex; gap: 10px; margin-top: 10px;">
+        <a href="counselor-appointments.html" class="btn btn-gray">View All Appointments</a>
+        <a href="counselor-resources.html" class="btn btn-gray">Manage Resources</a>
+    </div>
+
+</div>
+
+</body>
+</html>
